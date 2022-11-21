@@ -1,4 +1,4 @@
-# react-leaflet-component
+# react-leaflet-components
 
 > React Leaflet offers us many things, but without some points it is difficult to activate the map. (Multi Data)
 
@@ -19,6 +19,7 @@ npm install --save react-leaflet-component
 ## Usage
 
 ```jsx
+
 import React from 'react'
 // REACT LEAFLET COMPONENT
 import { Map } from 'react-leaflet-component'
@@ -35,13 +36,9 @@ const App = () => {
   return (
     <div>
       <Map
-        // Data
         dataSource={location}
-        // Center Location
         center={[38.963745, 35.243322]}
-        // Marker İcon
         markerIcon={MarkerIcon}
-        // İcon Size
         iconSizeTwo={26}
         zoom={4}
         minZoom={6}
@@ -51,21 +48,26 @@ const App = () => {
 }
 
 export default App
+
 ```
 
 ## Make Sure to Write This (index.css)
 
 ```jsx
+
 .leaflet-container {
   width: 100%;
   height: 100vh;
 }
+
 ```
 
 ## Make Sure to Write This (index.js)
 
 ```jsx
+
 import 'leaflet/dist/leaflet.css'
+
 ```
 
 ## License
