@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-components",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React Leaflet offers us many things, but without some points it is difficult to activate the map. (Multi Data) Let's make our job easier... Add a map to your code with a single line. You can write your desired Marker, Marker Size and Multi-data processing much faster.",
   "author": "Mahmutcano",
   "license": "MIT",

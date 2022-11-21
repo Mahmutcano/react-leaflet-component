@@ -22,10 +22,14 @@ npm install --save react-leaflet-component
 import React from 'react'
 // REACT LEAFLET COMPONENT
 import { Map } from 'react-leaflet-component'
-// DATA
-import { location } from './Data/location.js'
 // ICON SVG,PNG,JPG..
 import MarkerIcon from './assets/pin.png'
+
+// DATA
+export const location = [
+  { key: 1, lat: 38.963745, lng: 35.243322 },
+  { key: 2, lat: 37.874641, lng: 32.493156 },
+];
 
 const App = () => {
   return (
