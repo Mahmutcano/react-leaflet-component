@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import L from 'leaflet'
+import './index.css'
 
 export const Map = (props) => {
   const [data, setData] = useState([])
