@@ -1,8 +1,12 @@
 # react-leaflet-component
 
-> Do you want to add your map successfully with a single tag to avoid writing too much code with React leaflet?
+> React Leaflet offers us many things, but without some points it is difficult to activate the map. (Multi Data)
 
-You can use more than one marker together with a package where you can perform multiple data operations, you can easily add your icon format and type.
+Let's make our job easier...
+
+Add a map to your code with a single line.
+
+You can write your desired Marker, Marker Size and Multi-data processing much faster.
 
 [![NPM](https://img.shields.io/npm/v/react-leaflet-component.svg)](https://www.npmjs.com/package/react-leaflet-component) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,33 +19,49 @@ npm install --save react-leaflet-component
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+// REACT LEAFLET COMPONENT
+import { Map } from 'react-leaflet-component'
+// DATA
+import { location } from './Data/location.js'
+// ICON SVG,PNG,JPG..
+import MarkerIcon from './assets/pin.png'
 
-import Mapping from 'react-leaflet-component'
-import 'react-leaflet-component/dist/index.css'
+const App = () => {
+  return (
+    <div>
+      <Map
+        // Data
+        dataSource={location}
+        // Center Location
+        center={[38.963745, 35.243322]}
+        // Marker İcon
+        markerIcon={MarkerIcon}
+        // İcon Size
+        iconSizeTwo={26}
+        zoom={4}
+        minZoom={6}
+      />
+    </div>
+  )
+}
 
-class Example extends Component {
-  render() {
-    return <Mapping />
-  }
+export default App
+```
+
+## Make Sure to Write This (index.css)
+
+```jsx
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
 }
 ```
 
-## index.js
+## Make Sure to Write This (index.js)
 
 ```jsx
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import App from './App'
 import 'leaflet/dist/leaflet.css'
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
 ```
 
 ## License
