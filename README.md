@@ -1,6 +1,8 @@
 # react-leaflet-component
 
-> Currently under construction
+> Do you want to add your map successfully with a single tag to avoid writing too much code with React leaflet?
+
+You can use more than one marker together with a package where you can perform multiple data operations, you can easily add your icon format and type.
 
 [![NPM](https://img.shields.io/npm/v/react-leaflet-component.svg)](https://www.npmjs.com/package/react-leaflet-component) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
