@@ -1,6 +1,6 @@
 # react-leaflet-component
 
-> Description
+> Currently under construction
 
 [![NPM](https://img.shields.io/npm/v/react-leaflet-component.svg)](https://www.npmjs.com/package/react-leaflet-component) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,14 +15,31 @@ npm install --save react-leaflet-component
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-leaflet-component'
+import Mapping from 'react-leaflet-component'
 import 'react-leaflet-component/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Mapping />
   }
 }
+```
+
+## index.js
+
+```jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import App from './App'
+import 'leaflet/dist/leaflet.css'
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
 ```
 
 ## License
