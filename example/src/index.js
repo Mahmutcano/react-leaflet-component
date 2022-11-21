@@ -1,7 +1,7 @@
 import './index.css'
-
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import MapPage from './MapPage.jsx'
+import "leaflet/dist/leaflet.css"
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<MapPage />, document.getElementById('root'))
