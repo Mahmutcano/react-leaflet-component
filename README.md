@@ -13,7 +13,7 @@ You can write your desired Marker, Marker Size and Multi-data processing much fa
 ## Install
 
 ```bash
-npm install --save react-leaflet-component
+npm install --save react-leaflet-components
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ npm install --save react-leaflet-component
 
 import React from 'react'
 // REACT LEAFLET COMPONENT
-import { Map } from 'react-leaflet-component'
+import { Map } from 'react-leaflet-components'
 // ICON SVG,PNG,JPG..
 import MarkerIcon from './assets/pin.png'
 

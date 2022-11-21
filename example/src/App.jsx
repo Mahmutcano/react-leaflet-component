@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map } from 'react-leaflet-component'
+import { Map } from 'react-leaflet-components'
 import MarkerIcon from './assets/pin.png'
 
 export const location = [
